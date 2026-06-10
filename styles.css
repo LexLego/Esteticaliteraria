@@ -1,0 +1,314 @@
+:root {
+            --bg-principal: #070509;
+            --bg-tarjeta: #120e16;
+            --rosa-cyber: #ff4da6;
+            --lila-ritual: #b388ff;
+            --plata-metal: #cbd5e1;
+            --texto-claro: #f8fafc;
+            --texto-mutado: #94a3b8;
+            --borde-sutil: rgba(179, 136, 255, 0.2);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-principal);
+            color: var(--texto-claro);
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            padding: 3rem 2rem;
+        }
+
+        header {
+            border-bottom: 1px solid var(--lila-ritual);
+            padding-bottom: 2.5rem;
+            margin-bottom: 3.5rem;
+            text-align: center;
+        }
+
+        header h1 {
+            color: var(--rosa-cyber);
+            font-size: 2.8rem;
+            font-weight: 300;
+            letter-spacing: 3px;
+            margin-bottom: 0.5rem;
+        }
+
+        header h2 {
+            color: var(--lila-ritual);
+            font-size: 1.3rem;
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+        }
+
+        .datos-institucionales {
+            color: var(--texto-mutado);
+            font-size: 0.95rem;
+            line-height: 1.8;
+        }
+
+        .mapa-navegacion {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 3.5rem;
+            background-color: var(--bg-tarjeta);
+            padding: 1.2rem;
+            border-radius: 8px;
+            border: 1px solid var(--borde-sutil);
+        }
+
+        .boton-sala {
+            background: transparent;
+            border: 1px solid var(--texto-mutado);
+            color: var(--texto-claro);
+            padding: 0.8rem 2rem;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: all 0.4s ease;
+            font-size: 1rem;
+            letter-spacing: 1px;
+        }
+
+        .boton-sala:hover, .boton-sala.activa {
+            background-color: var(--lila-ritual);
+            color: var(--bg-principal);
+            border-color: var(--lila-ritual);
+            box-shadow: 0 0 20px rgba(179, 136, 255, 0.5);
+        }
+
+        .contenedor-salas {
+            position: relative;
+            min-height: 600px;
+        }
+
+        .sala {
+            display: none;
+            animation: fadeIn 0.8s ease forwards;
+        }
+
+        .sala.activa {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .banner-museografico {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 2.5rem;
+            border: 1px solid var(--borde-sutil);
+            filter: grayscale(40%) brightness(60%) contrast(110%);
+        }
+
+        .reticula-sala {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 3rem;
+        }
+
+        .atmosfera-descripcion {
+            background-color: var(--bg-tarjeta);
+            padding: 2.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--rosa-cyber);
+            height: fit-content;
+        }
+
+        .atmosfera-descripcion h3 {
+            color: var(--rosa-cyber);
+            margin-bottom: 1.2rem;
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
+
+        .vitrina-objetos {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .tarjeta-objeto {
+            background-color: var(--bg-tarjeta);
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid rgba(203, 213, 225, 0.08);
+        }
+
+        
+        .imagen-objeto {
+            width: 100%;
+            height: auto;
+            max-height: 420px;
+            object-fit: contain;
+            background-color: rgba(255, 64, 129, 0.02);
+            border-radius: 6px;
+            margin-bottom: 1.2rem;
+            border: 1px solid rgba(255, 77, 166, 0.15);
+            filter: brightness(85%) contrast(105%);
+        }
+
+        .ficha-tecnica {
+            font-size: 0.85rem;
+            color: var(--lila-ritual);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 0.6rem;
+        }
+
+        .tarjeta-objeto h4 {
+            color: var(--plata-metal);
+            margin-bottom: 0.8rem;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        .cedula-cita {
+            font-style: italic;
+            color: var(--texto-claro);
+            background: rgba(255, 64, 129, 0.03);
+            padding: 1.2rem;
+            border-radius: 4px;
+            margin-top: 1.2rem;
+            border-left: 2px solid var(--lila-ritual);
+            font-size: 0.95rem;
+        }
+
+        .seccion-audio {
+            margin-top: 5rem;
+            background: linear-gradient(135deg, var(--bg-tarjeta), #16101e);
+            padding: 3rem;
+            border-radius: 8px;
+            border: 1px solid var(--lila-ritual);
+            text-align: center;
+        }
+
+        .control-audio {
+            background-color: var(--rosa-cyber);
+            color: var(--texto-claro);
+            border: none;
+            padding: 0.9rem 2.5rem;
+            font-size: 1rem;
+            border-radius: 50px;
+            cursor: pointer;
+            margin-top: 1.5rem;
+            transition: all 0.3s ease;
+            letter-spacing: 1px;
+        }
+
+        .control-audio:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 15px var(--rosa-cyber);
+        }
+
+        .subtitulos-audio {
+            margin-top: 2rem;
+            min-height: 60px;
+            color: var(--lila-ritual);
+            font-style: italic;
+            font-size: 1.1rem;
+        }
+
+        .seccion-teorica {
+            margin-top: 6rem;
+            padding-top: 4rem;
+            border-top: 1px solid rgba(203, 213, 225, 0.15);
+        }
+
+        .seccion-teorica h2 {
+            color: var(--rosa-cyber);
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        .texto-critico {
+            text-align: justify;
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+            color: rgba(248, 250, 252, 0.9);
+        }
+
+        .texto-critico p {
+            margin-bottom: 1.8rem;
+            text-indent: 2.5rem;
+        }
+
+        .bibliografia, .declaracion-ia {
+            background-color: var(--bg-tarjeta);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+            border: 1px solid rgba(203, 213, 225, 0.05);
+        }
+
+        .bibliografia h4, .declaracion-ia h4 {
+            color: var(--lila-ritual);
+            margin-bottom: 0.8rem;
+            font-weight: 500;
+        }
+
+        .bibliografia p, .declaracion-ia p {
+            font-size: 1rem;
+            color: var(--texto-mutado);
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 992px) {
+            .reticula-sala { grid-template-columns: 1fr; }
+            body { padding: 1.5rem; }
+            .banner-museografico { height: 200px; }
+
+            .hoja-lectura-critica {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: var(--bg-tarjeta);
+            padding: 3.5rem;
+            border-radius: 8px;
+            border: 1px solid var(--borde-sutil);
+        }
+
+       
+        .cuerpo-texto-ensayo {
+            text-align: justify;
+            font-size: 1.15rem;
+            color: rgba(248, 250, 252, 0.95);
+            margin-bottom: 3rem;
+        }
+
+        .cuerpo-texto-ensayo p {
+            margin-bottom: 2rem;
+            text-indent: 3rem;
+        }
+
+        .bloque-anexos-gabinete {
+            background-color: #0b080f;
+            padding: 2rem;
+            border-radius: 6px;
+            margin-top: 2rem;
+            border: 1px solid rgba(179, 136, 255, 0.1);
+        }
+
+        .bloque-anexos-gabinete h4 {
+            color: var(--lila-ritual);
+            margin-bottom: 1rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        .bloque-anexos-gabinete p {
+            font-size: 1.05rem;
+            color: var(--plata-metal);
+            margin-bottom: 0.8rem;
+        }
+        }

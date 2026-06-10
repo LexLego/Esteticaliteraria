@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alejandra Berenice López Legorreta">
+    <meta rel="author" href="mailto:alejandra.berenice.lopez.legorreta@estudiante.uacm.edu.mx">
+    <title>Cartografía del Órgano Expanso</title>
+  
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <header>
+        <h1>CARTOGRAFÍA DEL ÓRGANO EXPANSO</h1>
+        <h2>Dossier Curatorial </h2>
+        <p>Una exploración museográfica de la novela <em>El corazón habitante</em> a través de tres dispositivos espaciales que revelan la relación entre el cuerpo, el espacio y la identidad.</p>
+        <div class="datos-obra">
+            <p><strong>Obra:</strong> El corazón habitante</p>
+            <p><strong>Autor:</strong> Daniela Tarazona</p>
+            <p><strong>Año de Publicación:</strong> 2025</p>
+        </div>
+
+    </header>
+
+    <nav class="mapa-navegacion">
+        <button class="boton-sala activa" onclick="cambiarSala('sala1', this)">Sala 1: La Caverna</button>
+        <button class="boton-sala" onclick="cambiarSala('sala2', this)">Sala 2: El Anfiteatro</button>
+        <button class="boton-sala" onclick="cambiarSala('sala3', this)">Sala 3: El Habitáculo</button>
+        <button class="boton-sala" onclick="cambiarSala('sala4', this)">Sala 4: El Gabinete Crítico</button>
+    </nav>
+
+    <main class="contenedor-salas">
+
+        <section id="sala1" class="sala activa">
+            <img src="dramatic-dark-grey-stone-texture-with-spotlight-effect_84443-73612.avif" alt="Atmósfera de la Caverna paleolítica" class="banner-museografico">
+            <div class="reticula-sala">
+                <div class="atmosfera-descripcion">
+                    <h3>Sala 1: El Umbral de la Caverna (El origen de la representación)</h3>
+                    <p>Un contenedor en penumbra que evoca el confinamiento originario. Los muros exhiben una textura pétrea irregular donde se proyecta la oscilación de un fuego artificial. La iluminación cenital se concentra exclusivamente en tres pedestales de lectura dispuestos frente a la réplica de una laguna subterránea.</p>
+                </div>
+                <div class="vitrina-objetos">
+                    <div class="tarjeta-objeto">
+                        <img src="a-well-preserved-late-neolithic-flint-dagger-found-in-v0-acnnt0cbmfua1.webp" alt="Daga monolítica de sílex neolítico" class="imagen-objeto">
+                        <div class="ficha-tecnica">Objeto: Pieza 01</div>
+                        <h4>Daga monolítica de sílex melado con retoque bifacial por presión .</h4>
+                        <div class="cedula-cita">«Ella hundió la mano entera dentro de la herida y la sumió más para buscar lo que preferían comer primero: el corazón. Movió la mano dentro, estaba sintiendo el calor de la carne».</div>
+                    </div>
+                    <div class="tarjeta-objeto">
+                        <video src="3944333777-preview(1).mp4" class="imagen-objeto" controls loop muted autoplay></video>
+                        <div class="ficha-tecnica">Objeto: Pieza 02</div>
+                        <h4>Caracol marino perforado, suspendido por una delgada tira de cuero gastado.</h4>
+                        <div class="cedula-cita">«La mujer, con la mano húmeda con la pulpa negra va hacia la saliente... el dedo índice comienza el baile... revela lo insólito. La parte inferior es un cuerpo femenino... las esferas han sido la consecuencia de haber visto esa misma Luna».</div>
+                    </div>
+
+                    <div class="tarjeta-objeto">
+                       <img src="Soft-stone-bowl-NC-Warren-Wilson.jpg" alt="Cuenco prehistórico de esteatita" class="imagen-objeto">
+                        <div class="ficha-tecnica">Objeto: Pieza 03</div>
+                        <h4>Cuenco de piedra esteatita con concavidad pulida y vestigios de uso primitivo.</h4>
+                        <div class="cedula-cita">«La mujer, con la mano húmeda con la pulpa negra va hacia la saliente... el dedo índice comienza el baile... revela lo insólito. La parte inferior es un cuerpo femenino... las esferas han sido la consecuencia de haber visto esa misma Luna»..</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sala2" class="sala">
+            <img src="Art-Pic-2.webp" alt="Teatro anatómico e instrumental antiguo" class="banner-museografico">
+            <div class="reticula-sala">
+                <div class="atmosfera-descripcion">
+                    <h3>Sala 2: El Anfiteatro Circular (La disección y el orden de la máquina)</h3>
+                    <p>Estructura concéntrica de gradas de madera que reproduce la arquitectura de un teatro anatómico del siglo XVII. En el centro geométrico de la sala, bajo una luz blanca y focalizada, se ubica una mesa de disección de roble macizo. El espacio se encuentra impregnado por un sutil aroma a fijador químico y cebo de jabón.</p>
+                </div>
+                <div class="vitrina-objetos">
+                    <div class="tarjeta-objeto">
+                        <img src="vintage-surgical-tools-stockcake.jpg" alt="Instrumental quirúrgico de acero" class="imagen-objeto">
+                        <div class="ficha-tecnica">Objeto: Pieza 04</div>
+                        <h4>Estuche de cirugía que resguarda instrumental quirúrgico, escalpelos de acero templado, ganchos y trépanos.</h4>
+                        <div class="cedula-cita">«William considera que la mano de Dios está en la creación, y con el uso audaz de sus instrumentos indaga dentro de cuerpos... El cuerpo-máquina funciona así... movimientos y acciones que no responden a nada, salvo a la voluntad de Dios».</div>
+                    </div>
+                    <div class="tarjeta-objeto">
+                        <img src="giovanni-battista-.jpg" alt="grabado" class="imagen-objeto">
+                        <div class="ficha-tecnica">Objeto: Pieza 05</div>
+                    <h4>Grabado teratológico de una trinidad monstruosa: dragón, asedio de perros y criatura acuática.</h4>
+                    <p>Lámina teratológica del barroco que revela el fracaso absoluto de la disección como herramienta de control racional. La composición presenta tres personajes mutantes alineados: una figura reptiliana dragónica, una humanoide desollada cuyo cuerpo es asediado por múltiples cabezas de perros brotando violentamente de sus articulaciones, y una criatura anfibia tipo delfín. Esta Pieza 05 opera como la materialización plástica de la disolución de la unidad humana y el asedio de la memoria orgánica.</p>
+                        <div class="cedula-cita">«La cola que iba naciéndole le molestaba al sentarse... el crecimiento de la cola indicaba que esos hombres especiales estaban destinados a arar la tierra... la cola, ahora, sea también la memoria de lo que fui antes de nacer».</div>
+                    </div>
+                    <div class="tarjeta-objeto">
+                        <img src="venus-anatomica-susini-02.webp"  alt="Venus anatómica de cera de Susini con vientre expuesto" class="imagen-objeto">
+    <div class="ficha-tecnica">Objeto: Pieza 06</div>
+    <h4>Réplica en cera coloreada de una Venus anatómica con el vientre gestante abierto en canal.</h4>
+    <p>Escultura anatómica desmontable que expone la vulnerabilidad intrínseca del organismo mediante la mímesis de tejidos y cavidades, operando como el punto de convergencia donde el erotismo y la mirada clínica de la modernidad se superponen para interrogar los misterios de la generación biológica.</p>
+    <div class="cedula-cita">«Clava el cuchillo y extiende el movimiento hacia el fondo, como se corta la carne en la carnicería. Abre la herida, se esmera en el movimiento, algo truena, deben ser las costillas. Expone a los asistentes la suma de órganos...»</div>
+                   </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sala3" class="sala">
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200" alt="Habitáculo tecnológico y circuitos espaciales" class="banner-museografico">
+            <div class="reticula-sala">
+                <div class="atmosfera-descripcion">
+                    <h3>Sala 3: El Habitáculo Hermético (La suspensión y el vacío técnico)</h3>
+                    <p>Una cabina cúbica de superficies metálicas pulidas y luces testigo de color anaranjado que parpadean de forma intermitente. El ambiente es gélido y confinante. En los ángulos de la estructura se aprecian cultivos controlados de moho biológico. El diseño sonoro de la sala reproduce una respiración humana contenida, mezclada con la estática de frecuencias de radio estropeadas.</p>
+                </div>
+                <div class="vitrina-objetos">
+                    <div class="tarjeta-objeto">
+                        <img src="ChatGPT Image 9 jun 2026, 05_46_00 p.m..png" alt="Contenedores y correas técnicas" class="imagen-objeto">
+                        <div class="ficha-tecnica">Objeto: Pieza 07</div>
+                        <h4>Saco de dormir de lona técnica provisto de correas de sujeción herméticas.</h4>
+                        <div class="cedula-cita">«Te inquieta el comportamiento de los circuitos, alucinas que las pulsaciones de tu corazón se acompasarán a ellos... que tu cuerpo inflado se disolverá entre los cables».</div>
+                    </div>
+                    <div class="tarjeta-objeto">
+                        <img src="ChatGPT Image 9 jun 2026, 05_47_26 p.m..png" alt="Páginas de bitácora antigua manuscrita" class="imagen-objeto">
+                        <div class="ficha-tecnica">Objeto: Pieza 08</div>
+                        <h4>Bitácora de viaje con anotaciones marginales manuscritas y gráficas de rotación planetaria tachadas.</h4>
+                        <div class="cedula-cita">«Su sensibilidad se parece al hambre, como los óvalos que ha dibujado se parecen a los planetas... El espacio exterior está dentro de su cerebro, sitio de caos».</div>
+                    </div>
+                    <div class="tarjeta-objeto">
+                        <img src="ChatGPT Image 9 jun 2026, 05_50_06 p.m..png" alt="Sobres plateados herméticos" class="imagen-objeto">
+                        <div class="ficha-tecnica">Objeto: Pieza 09</div>
+                        <h4>Sobres plateados al vacío conteniendo tiras de carne disecada y deshidratada.</h4>
+                   <div class="cedula-cita">«Es carne disecada. Piensa de pronto en el animal que portaba aquella carne, el animal que fue en el origen... disfruta el sabor algo salado. De pronto, distingue desde su lugar una luz anaranjada en la consola de avisos».</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+   <section id="sala4" class="sala">
+            <div class="hoja-lectura-critica">
+                <h3>Sala 4: El Gabinete Crítico (Dispositivo de Consulta Teórica)</h3>
+                
+                <div class="cuerpo-texto-ensayo">
+                    <p>La arquitectura narrativa de <em>El corazón habitante</em> desafía la progresión cronológica tradicional para instaurar una simultaneidad espacial donde el cuerpo opera como territorio de confluencia. Esta propuesta curatorial, titulada <em>Cartografía del Órgano Expanso</em>, se fundamenta en la premisa de que la caverna paleolítica, el anfiteatro anatómico del siglo XVII y la nave espacial contemporánea no constituyen meros escenarios históricos, sino heterotopías donde la carne es confinada, examinada y violentada. Gaston Bachelard, en <em>La poética del espacio</em>, plantea que los lugares que habitamos resguardan los estados de nuestra alma; Daniela Tarazona radicaliza este postulado al mostrar que las prisiones espaciales modifican la anatomía de los personajes, manifestando las crisis de la identidad a través de anomalías biológicas como colas, conejas o cangrejos pectorales.</p>
+                    <p>La disección formal de la obra revela que la aparente fragmentación de los tres hilos conductores responde a una rigurosa estructura especular. Los motivos recurrentes del fluido sanguíneo, la redondez de la nuez cerebral y el latido constante actúan como pasajes intertextuales que disuelven la distancia de milenios. Michel Foucault señala en sus análisis sobre la clínica que la mirada médica del siglo XVII buscaba ordenar el organismo para volverlo legible; el personaje de Harvey en la novela subvierte este paradigma cuando su propia mutación física escapa al saber anatómico, aproximándolo a la experiencia mística de la mujer prehistórica y al extrañamiento del cosmonauta en órbita. La circularidad del tiempo se materializa en el moho que crece en la nave espacial, un elemento orgánico primitivo que coloniza la alta tecnología, uniendo el inicio y el fin de la escala humana.</p>
+                    <p>Traducir esta novela a un dossier curatorial permite abandonar la lógica expositiva del ensayo académico para adoptar una metodología plástica que hace visible la geografía del dolor y el desdoblamiento. La disposición tripartita de las salas demuestra que la escritura de Tarazona es un ejercicio de microcirugía literaria donde el lenguaje deforma el espacio para salvar al cuerpo del olvido. Configurar una sala de lectura bajo estos parámetros estéticos devuelve al espectador la experiencia del pálpito originario, convirtiendo la literatura contemporánea en una estancia que no solo se lee, sino que se padece y se habita.</p>
+                </div>
+
+                <div class="bloque-anexos-gabinete">
+                    <h4>Fuentes Bibliográficas</h4>
+                    <p style="text-indent: -1.5rem; padding-left: 1.5rem;">Bachelard, Gaston. <em>La poética del espacio</em>. Fondo de Cultura Económica, 2000.</p>
+                    <p style="text-indent: -1.5rem; padding-left: 1.5rem;">Foucault, Michel. <em>El nacimiento de la clínica: una arqueología de la mirada médica</em>. Siglo XXI Editores, 2004.</p>
+                    <p style="text-indent: -1.5rem; padding-left: 1.5rem;">Tarazona, Daniela. <em>El corazón habitante</em>. Almadía, 2025.</p>
+                </div>
+
+                <div class="bloque-anexos-gabinete">
+                    <h4>Declaración de Uso de Inteligencia Artificial</h4>
+                    <p style="text-align: justify;">Bajo las directrices éticas estipuladas por la UACM, se declara que el uso de la Inteligencia Artificial se circunscribió estrictamente al desarrollo técnico y la maquetación digital de la propuesta, operando bajo la modalidad de un asesor consultivo para la codificación en lenguajes web. Esta asistencia tecnológica posibilitó la traducción del plano museográfico abstracto a una interfaz interactiva funcional, agilizando el diseño de las hojas de estilo y la estructura digital sin interferir en el plano analítico. De este modo, el entramado teórico, la selección de cédulas, el aparato conceptual y la valoración estética de la obra permanecen como un ejercicio intelectual soberano de la autora.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="seccion-audio">
+        <h3>Componente Acústico: Audio-Guía Inmersiva</h3>
+        <p>Active el dispositivo para escuchar la mediación crítica y el paisaje sonoro de las salas.</p>
+        <button class="control-audio" id="botonAudio" onclick="reproducirAudioSimulado()">Iniciar Audio-Guía</button>
+        <div class="subtitulos-audio" id="subtitulos">Sistema listo para la reproducción...</div>
+    </section>
+
+    
+    </section>
+
+    <script src="script.js" defer></script>
+    
+</body>
+</html>
